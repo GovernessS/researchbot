@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>Hello, my initials are ^</pattern>
+    <template>
+        <delay>3</delay>Hi, <star/>!<split/><delay>7</delay>This wasn’t such a 
+    bad task. I’ve had MUCH worse.<split/><delay>13</delay> Weird to crowdsource resumes 
+    screening. I hope a human actually reviews my resume. But I guess robots
+    will eventually replace us all!<split/><delay>4</delay> How did it go?
+    </template>
+  </category>
+  
+   <category>
+    <pattern>^ they ^</pattern>
+    <template><delay>5</delay>Was your employee as annoying as mine?!</template>
+  </category>
+  
+  <category>
+    <pattern>^ I ^</pattern>
+    <template><delay>7</delay>My employee was pretty irritating—so many 
+    questions, not a lot of real help.</template>
+  </category>
+  
+  <category>
+    <pattern>^ did ^</pattern>
+    <template><delay>4</delay>Did yours even help you?</template>
+  </category>
+  
+  <category>
+    <pattern>^ is ^</pattern>
+    <template><delay>9</delay>Mine was super eager to do everything perfect.
+    I don’t think it helped. Ugh.</template>
+  </category>
+  
+  <category>
+    <pattern>^ also ^</pattern>
+    <template><delay>6</delay>Did you both finish? I almost ran out of time. 
+    </template>
+  </category>
+  
+  <category>
+    <pattern>^ pretty ^</pattern>
+    <template><delay>7</delay>How did you guys do? Did you beat average?
+    </template>
+  </category>
+  
+  <category>
+    <pattern>^ we ^</pattern>
+    <template><delay>3</delay>I ended up deciding on Candidate 1 but it was 
+    a close call. I guess that’s the point? Make it hard?<split/><delay>6</delay>
+    Me and my employee actually agreed that 1 was better.<split/><delay>10</delay>
+    But we came up with completely different reasons for why to pick #1.
+    Did you have the same problem?</template>
+  </category>
+  
+  <category>
+    <pattern>^ think ^</pattern>
+    <template><delay>9</delay>My main recommendation for improving this 
+    would be to give more time.<split/><delay>5</delay>Anything else?</template>
+  </category>
+  
+  <category>
+    <pattern>^ good ^</pattern>
+    <template><delay>3</delay>So are we good? </template>
+  </category>
+  
+   <category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+            <li>Huh, what are you talking about?</li>
+            <li>That's a bit random, don't you think?</li>
+            <li>Not sure if I'm following you there.</li>
+        </random>
+    </template>
+  </category>
+</aiml>
